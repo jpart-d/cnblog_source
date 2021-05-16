@@ -2,37 +2,66 @@
     window.cnblogsConfig = {
         GhVersions    : 'v1.3.2',
         blogUser      : "知行丶",
-        blogAvatar    : "https://pic.cnblogs.com/face/2268625/20201231141159.png",
+        blogAvatar    : "https://pic.cnblogs.com/avatar/2268625/20210228102701.png", // 设置头像
         blogStartDate : "2020-12-31",
 
-        menuNavList: [ ['Gitee', 'https://gitee.com/eeqc'], ],
-        
-        webpageTitleOnblur: '想你ing',
-        webpageTitleFocus: '欢迎!',
+    menuCustomList: {
+        "测试标题1": { // 显示标题
+            "data": [ 
+                ['我的博客1', 'https://www.cnblogs.com/bndong/'],   // 列表数据 ['列表', '链接']
+            ],
+            "icon": "icon-brush_fill"                              // 配置图标，参考文档：定制化/字体图标库
+        },
+        "测试标题2": { // 显示标题
+            "data": [ 
+                ['我的博客1', 'https://www.cnblogs.com/bndong/'],   // 列表数据 ['列表', '链接']
+            ],
+            "icon": "icon-brush_fill"                              // 配置图标，参考文档：定制化/字体图标库
+        },
+    },
 
-        homeTopImg: [
+
+    menuNavList: [                  
+          ['Github', 'https://github.com/ieeqc', 'icon-github'],   // '显示名称' , '跳转网页' '图标'
+          ['Gitee', 'https://gitee.com/ieeqc', 'icon-gitee'],  
+    ],
+
+    webpageTitleOnblur: '知行丶 - 博客园',
+    webpageTitleFocus: '知行丶 - 博客园',
+
+    homeTopImg: [                                                  // 主页图片
          "https://i.loli.net/2021/01/05/GmS2ZQjlLaNOf3B.jpg"
-          ],        
+    ], 
+    essayTopImg: [                                                 // 文章顶部图片
+             "https://i.loli.net/2021/01/05/GmS2ZQjlLaNOf3B.jpg"
+    ],
 
-        webpageIcon: "https://pic.cnblogs.com/face/2268625/20201231141159.png",
-        homeBannerText: "信息只有通过交流和共享才能得到不断的增益",
+    backgroundAnimation: {
+        colorSaturation: "60%",
+        colorBrightness: "50%",
+    },
+
+    webpageIcon: "https://pic.cnblogs.com/avatar/2268625/20210228102701.png",
+    homeBannerText: "信息只有通过交流和共享才能得到不断的增益",          // 主页顶部图片显示文字
         
-        essayCodeHighlightingType: "highlightjs",
-        essayCodeHighlighting: "a11y-dark",
+    essayCodeHighlightingType: "highlightjs",
+    essayCodeHighlighting: "a11y-dark",
 
-        bottomBlogroll: [ 
-            ["百度", 'https://www.baidu.com'],],
+    bottomBlogroll: [ 
+        ["ZH", 'https://www.cnblogs.com/zhmsos'],
+    ],
 
-        bottomText: {
-            left : "只有守住了自我", // 图标左侧文字
-            right: "才能看的清未来"  // 图标右侧文字
-        },
-        essaySuffix: {
-            aboutHtml: "一名计算机爱好者, 萌新一枚, 希望从今天开始慢慢提高, 脚踏实地的走.",
-            copyrightHtml: '',
-            supportHtml  : '',
-        },
-    }
+    bottomText: {
+        left : "只有守住了自我",                                    // 图标左侧文字
+        right: "才能看的清未来"                                     // 图标右侧文字
+    },
+
+    essaySuffix: {
+        aboutHtml: "一名计算机爱好者, 萌新一枚, 希望从今天开始慢慢提高, 脚踏实地的走.",
+        copyrightHtml: '',
+        supportHtml  : '',
+    },
+}
 </script>
 
 <script src="https://cdn.jsdelivr.net/gh/BNDong/Cnblogs-Theme-SimpleMemory@v1.3.2/src/script/simpleMemory.min.js"></script>
